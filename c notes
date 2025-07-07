@@ -1,0 +1,198 @@
+🧠 C Language Notes
+
+
+🔹 1. Introduction to C
+Developed by: Dennis Ritchie in 1972 at Bell Labs.
+
+Type: Procedural, structured, compiled, middle-level language.
+
+Uses: System programming, embedded systems, OS development.
+
+
+
+🔹 2. Structure of a C Program
+c
+Copy
+Edit
+#include <stdio.h>  // Preprocessor directive
+
+int main() {        // Main function
+    printf("Hello, World!");  // Output
+    return 0;       // Exit status
+}
+
+
+🔹 3. Basic Syntax
+Semicolon (;): Ends a statement.
+
+Comments:
+
+Single line: // comment
+
+Multi-line: /* comment */
+
+Identifiers: Names for variables, functions.
+
+
+
+🔹 4. Data Types
+Type	Description	Example
+int	Integer	int a = 10;
+float	Floating-point number	float b = 3.14;
+char	Character	char c = 'A';
+double	Double-precision float	double d = 3.14159;
+void	No value	Used in functions
+
+
+
+🔹 5. Variables & Constants
+c
+Copy
+Edit
+int age = 25;
+const float PI = 3.14;
+
+
+
+🔹 6. Operators
+Arithmetic: + - * / %
+
+Relational: == != > < >= <=
+
+Logical: && || !
+
+Assignment: = += -= *= /=
+
+Bitwise: & | ^ ~ << >>
+
+
+
+🔹 7. Control Statements
+if-else
+
+c
+Copy
+Edit
+if (a > b) {
+    printf("A is greater");
+} else {
+    printf("B is greater");
+}
+switch-case
+
+c
+Copy
+Edit
+switch (choice) {
+    case 1: printf("One"); break;
+    default: printf("Other");
+}
+
+
+
+
+🔹 8. Loops
+for
+
+c
+Copy
+Edit
+for (int i = 0; i < 5; i++) {
+    printf("%d", i);
+}
+while
+
+c
+Copy
+Edit
+int i = 0;
+while (i < 5) {
+    printf("%d", i);
+    i++;
+}
+do-while
+
+c
+Copy
+Edit
+int i = 0;
+do {
+    printf("%d", i);
+    i++;
+} while (i < 5);
+
+
+
+🔹 9. Functions
+c
+Copy
+Edit
+int sum(int a, int b) {
+    return a + b;
+}
+
+
+
+🔹 10. Arrays & Strings
+Array
+
+c
+Copy
+Edit
+int arr[5] = {1, 2, 3, 4, 5};
+String
+
+c
+Copy
+Edit
+char name[] = "John";
+
+
+
+🔹 11. Pointers
+c
+Copy
+Edit
+int x = 10;
+int *p = &x;
+printf("%d", *p);  // Outputs 10
+
+
+
+
+🔹 12. Structures
+c
+Copy
+Edit
+struct Person {
+    char name[50];
+    int age;
+};
+
+
+
+🔹 13. File Handling
+c
+Copy
+Edit
+FILE *fptr;
+fptr = fopen("data.txt", "r");
+fclose(fptr);
+
+
+
+
+🔹 14. Preprocessor Directives
+#include — include files
+
+#define — define constants/macros
+
+
+
+
+🔹 15. Important Headers
+Header File	Use
+stdio.h	Input/output (printf, scanf)
+stdlib.h	Memory, process control
+string.h	String handling
+math.h	Math functions
